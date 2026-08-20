@@ -4,7 +4,6 @@ import { getClassroomBySlug } from "../../content/classrooms";
 import { getTeachersByClassroom } from "../../content/teachers";
 import SectionIntro from "../../components/SectionIntro.astro";
 import TeacherProfile from "../../components/TeacherProfile.astro";
-import PhotoCutout from "../../components/PhotoCutout.astro";
 import DailySchedule from "../../components/DailySchedule.astro";
 import PhotoGallery from "../../components/PhotoGallery.astro";
 import FloatingIllustration from "../../components/FloatingIllustration.astro";
@@ -110,17 +109,6 @@ const galleryPhotos = [
         doodle="heart"
         align="center"
       />
-
-      <div class="classroom-group-photo">
-        <PhotoCutout
-          src="teachers/kangaroo-teachers-group.jpg"
-          alt="The Kangaroo Room teaching team: Maria, Brigitte, and Kobe"
-          variant="scrapbook"
-          aspectRatio="3:2"
-          caption="Our Kangaroo Room Teaching Team"
-          rotate={1}
-        />
-      </div>
 
       <div class="teachers-grid">
         {teachers.map((teacher) => (
@@ -230,11 +218,6 @@ const galleryPhotos = [
     background: var(--color-paper-white);
     position: relative;
     overflow: hidden;
-  }
-
-  .classroom-group-photo {
-    max-width: 640px;
-    margin: 0 auto 3.5rem;
   }
 
   .teachers-grid {
