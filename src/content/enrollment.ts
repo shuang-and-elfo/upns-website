@@ -51,15 +51,13 @@ export const ENROLLMENT_DATA = {
       title: "Schedule a Campus Tour (Recommended)",
       description:
         "Visit our school to see the classrooms in action, meet our teachers, and experience our cooperative community first-hand. Please call (310) 397-2735 to make an appointment.",
-      ctaText: "Contact Us to Visit",
-      ctaHref: "/visit/",
     },
     {
       stepNumber: 2,
       title: "Submit Your Online Application",
       description:
         "Complete our direct online application on Playground to join our waiting list and create your family profile.",
-      ctaText: "Apply Online on Playground",
+      ctaText: "Apply Now",
       ctaHref: "https://app.tryplayground.com/listings/pHGaQQmCye08bdPbfZWx",
     },
     {
