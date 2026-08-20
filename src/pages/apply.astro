@@ -8,7 +8,7 @@ import FloatingIllustration from "../components/FloatingIllustration.astro";
 
 <BaseLayout
   title="Apply to UPNS & Tuition"
-  description="Apply to University Parents Nursery School (UPNS) in Los Angeles. Review our 4-step application process, tuition schedule, eligibility, what to bring, and FAQs."
+  description="Apply to University Parents Nursery School (UPNS) in Los Angeles. Review our 3-step application process, tuition schedule, eligibility, what to bring, and FAQs."
 >
   {/* HERO HEADER */}
   <header class="apply-hero">
@@ -24,14 +24,14 @@ import FloatingIllustration from "../components/FloatingIllustration.astro";
     </div>
   </header>
 
-  {/* 4-STEP APPLICATION PROCESS */}
+  {/* 3-STEP APPLICATION PROCESS */}
   <section class="steps-section" aria-labelledby="steps-heading">
     <FloatingIllustration src="flower.png" position="bottom-right" size="md" rotate={10} />
     <div class="container">
       <SectionIntro
         badge="How to Apply"
-        title="4 Simple Steps to Enroll"
-        subtitle="Please review these steps carefully so your child's application is processed without delay."
+        title="3 Simple Steps to Enroll"
+        subtitle="Please review these steps to begin your family's application with UPNS."
         align="center"
       />
 
@@ -43,39 +43,38 @@ import FloatingIllustration from "../components/FloatingIllustration.astro";
             <p>
               Before applying, we invite you to tour our school to experience our classrooms and meet our teachers. Please call <strong>{SITE_CONFIG.contact.phone}</strong> to make a morning appointment.
             </p>
+            <div class="step-cta-row">
+              <a href="/visit/" class="step-link-btn outline">
+                <span>Plan Your Visit</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
           </div>
         </article>
 
-        <article class="step-card">
+        <article class="step-card highlight-step">
           <div class="step-num">2</div>
           <div class="step-content">
-            <h3>Submit the $50 Application Fee</h3>
+            <h3>Submit Your Online Application</h3>
             <p>
-              Your application process begins with submitting your $50.00 non-refundable application fee.
+              Complete our direct online application on Playground to join our waiting list and create your family profile.
             </p>
-            <div class="payment-methods">
-              <p><strong>Accepted Payment Methods:</strong></p>
-              <ul>
-                <li><strong>Zelle:</strong> Send electronically to <strong>{SITE_CONFIG.contact.email}</strong></li>
-                <li><strong>Check:</strong> Payable to "UPNS" delivered to our office</li>
-                <li><strong>Cash:</strong> In person during business hours</li>
-              </ul>
+            <div class="step-cta-row">
+              <a
+                href="https://app.tryplayground.com/listings/pHGaQQmCye08bdPbfZWx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="step-link-btn primary"
+              >
+                <span>Apply Online on Playground</span>
+                <span class="btn-arrow" aria-hidden="true">↗</span>
+              </a>
             </div>
           </div>
         </article>
 
         <article class="step-card">
           <div class="step-num">3</div>
-          <div class="step-content">
-            <h3>Email UPNS for the Application Link</h3>
-            <p>
-              Once your application fee is submitted, please email <strong>{SITE_CONFIG.contact.email}</strong> to receive our direct online enrollment application link and complete your family profile.
-            </p>
-          </div>
-        </article>
-
-        <article class="step-card">
-          <div class="step-num">4</div>
           <div class="step-content">
             <h3>Acceptance & Enrollment Notification</h3>
             <p>
@@ -279,38 +278,61 @@ import FloatingIllustration from "../components/FloatingIllustration.astro";
     margin: 0 0 0.5rem;
   }
 
-  .step-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--color-text-muted);
-    margin: 0 0 1rem;
+  .highlight-step {
+    border-color: rgba(224, 86, 36, 0.4);
+    background: linear-gradient(180deg, #ffffff 0%, #fffdfa 100%);
+    box-shadow: 0 8px 24px rgba(224, 86, 36, 0.08);
   }
 
-  .payment-methods {
-    background: #fffcf6;
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    padding: 1rem 1.25rem;
-    margin-top: 0.5rem;
+  .step-cta-row {
+    margin-top: 1rem;
   }
 
-  .payment-methods p {
-    margin: 0 0 0.5rem;
-    color: var(--color-text);
+  .step-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
   }
 
-  .payment-methods ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+  .step-link-btn.primary {
+    background: var(--color-tomato);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(224, 86, 36, 0.25);
   }
 
-  .payment-methods li {
-    font-size: 0.92rem;
-    color: var(--color-text);
+  .step-link-btn.primary:hover {
+    background: #cc4518;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(224, 86, 36, 0.35);
+  }
+
+  .step-link-btn.outline {
+    background: transparent;
+    color: var(--color-moss, #35483c);
+    border: 2px solid var(--color-moss, #35483c);
+  }
+
+  .step-link-btn.outline:hover {
+    background: var(--color-moss, #35483c);
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+
+  .btn-arrow {
+    font-size: 1.1rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+
+  .step-link-btn:hover .btn-arrow {
+    transform: translateX(3px);
   }
 
   /* Tuition Section */

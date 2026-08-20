@@ -27,9 +27,6 @@ export const ENROLLMENT_DATA = {
       "Potty training is NOT required to enroll in the Kitten Room (18 months to 2.5 years old). Our teachers partner with you when your child is ready. Potty training is REQUIRED for Kangaroo and Dolphin rooms.",
   },
   fees: {
-    applicationFee: "$50.00 (non-refundable)",
-    applicationFeeMethods:
-      "Checks, cash, or electronically via Zelle using our email address: upns@ucla.edu",
     enrollmentFee: "$500.00 one-time non-refundable ($250 Registration + $250 Security Deposit)",
     securityDepositNote: "The $250 Security Deposit is credited toward your child's first month's tuition.",
     scheduleChangeFee: "$25.00 one-time fee per schedule change",
@@ -51,7 +48,7 @@ export const ENROLLMENT_DATA = {
   steps: [
     {
       stepNumber: 1,
-      title: "Schedule a Campus Tour",
+      title: "Schedule a Campus Tour (Recommended)",
       description:
         "Visit our school to see the classrooms in action, meet our teachers, and experience our cooperative community first-hand. Please call (310) 397-2735 to make an appointment.",
       ctaText: "Contact Us to Visit",
@@ -59,23 +56,17 @@ export const ENROLLMENT_DATA = {
     },
     {
       stepNumber: 2,
-      title: "Submit Your Application",
+      title: "Submit Your Online Application",
       description:
-        "Complete our online application form and submit the $50.00 non-refundable application fee via check, cash, or Zelle (to upns@ucla.edu). Your application is not complete until the fee is received.",
-      ctaText: "Apply to UPNS",
-      ctaHref: "/apply/",
+        "Complete our direct online application on Playground to join our waiting list and create your family profile.",
+      ctaText: "Apply Online on Playground",
+      ctaHref: "https://app.tryplayground.com/listings/pHGaQQmCye08bdPbfZWx",
     },
     {
       stepNumber: 3,
       title: "Acceptance Notification & Intent",
       description:
-        "When an enrollment space becomes available, we will notify you by phone. You have one (1) week from notification to confirm your intent to enroll, or you may decline and remain on the waiting list.",
-    },
-    {
-      stepNumber: 4,
-      title: "Enrollment Forms & Fee Payment",
-      description:
-        "Within two (2) weeks of notification, complete the required enrollment forms through Kindertales and submit the one-time $500 enrollment fee ($250 Registration + $250 Security Deposit credited to month 1).",
+        "When an enrollment space becomes available, we will notify you by phone. Within 1 week of notification, confirm your intent to enroll. Within 2 weeks, complete enrollment forms and submit the one-time $500 enrollment fee ($250 Registration + $250 Security Deposit credited to month 1).",
     },
   ] as EnrollmentStep[],
   whatToBring: [
