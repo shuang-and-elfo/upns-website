@@ -131,7 +131,11 @@ export const CLASSROOMS: ClassroomInfo[] = [
     longDescription:
       "Dolphin children are ready to take their ideas further. They create longer games together, ask lots of questions, and return to projects over several days. Teachers bring reading, writing, numbers, science, and problem-solving naturally into the children’s play.",
     heroImage: "dolphin-thumbnail.jpg",
-    galleryImages: ["dolphin-thumbnail.jpg", "dolphin-outdoor.jpg"],
+    galleryImages: [
+      "dolphin-thumbnail.jpg",
+      "dolphin-playhouse.jpg",
+      "dolphin-outdoor.jpg",
+    ],
     pottyTrainingPolicy:
       "Potty training is REQUIRED for the Dolphin Room. The Dolphin Room is not equipped to change diapers.",
     teacherSupport: [
