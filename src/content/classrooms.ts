@@ -134,6 +134,8 @@ export const CLASSROOMS: ClassroomInfo[] = [
     galleryImages: [
       "dolphin-thumbnail.jpg",
       "dolphin-playhouse.jpg",
+      "dolphin-garden-water.jpg",
+      "dolphin-building-blocks.jpg",
       "dolphin-outdoor.jpg",
       "dolphin-lunch.jpg",
     ],
