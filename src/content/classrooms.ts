@@ -89,6 +89,7 @@ export const CLASSROOMS: ClassroomInfo[] = [
     galleryImages: [
       "kangaroo-thumbnail.jpg",
       "kangaroo-outdoor.jpg",
+      "kangaroo-magnet-tiles.jpg",
       "kan.jpg",
       "kan4.jpg",
       "kan5.jpg",
