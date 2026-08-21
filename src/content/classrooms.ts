@@ -135,6 +135,7 @@ export const CLASSROOMS: ClassroomInfo[] = [
       "dolphin-thumbnail.jpg",
       "dolphin-playhouse.jpg",
       "dolphin-outdoor.jpg",
+      "dolphin-lunch.jpg",
     ],
     pottyTrainingPolicy:
       "Potty training is REQUIRED for the Dolphin Room. The Dolphin Room is not equipped to change diapers.",
