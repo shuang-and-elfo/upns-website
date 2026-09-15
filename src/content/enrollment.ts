@@ -56,7 +56,7 @@ export const ENROLLMENT_DATA = {
       stepNumber: 2,
       title: "Submit Your Online Application",
       description:
-        "Complete our direct online application on Playground to join our waiting list and create your family profile.",
+        "Complete and submit our direct online application along with the $50 non-refundable application fee. Being placed on the waiting list does not guarantee or secure a spot at the school.",
       ctaText: "Apply Now",
       ctaHref: "https://app.tryplayground.com/listings/pHGaQQmCye08bdPbfZWx",
     },
