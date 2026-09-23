@@ -44,13 +44,13 @@ export const TEACHERS: Teacher[] = [
     active: true,
   },
   {
-    id: "nahomi-romero",
-    name: "Nahomi Romero",
+    id: "nahomy-romero",
+    name: "Nahomy Romero",
     role: "Kitten Room Teacher",
     classroom: "kitten",
     photo: "teachers/nahomi.jpg",
     shortBio:
-      "Nahomi enjoys making art and playing outside with the Kitten children while helping them feel comfortable and confident at school.",
+      "Nahomy enjoys making art and playing outside with the Kitten children while helping them feel comfortable and confident at school.",
     displayOrder: 11,
     active: true,
   },
